@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Menu-->
+    <header>
+        <div class="menu-logo"></div>
+        <nav>
+            <button class="btn-menu" onclick="scrollToSection('secao1')">Sobre Mim</button>
+            <a href="/paginas/sites.html">
+                <button class="btn-menu" onclick="">Desenvolvimento Web</button>
+            </a>
+            <button class="btn-menu" onclick="exibirAlert()">Desenvolvimento de Jogos</button>
+            <button class="btn-menu" onclick="exibirAlert()">PixelArt</button>
+        </nav>
+        <div class="menu-redes"></div>
+    </header>
+
+    <!--Carrossel-->
+
+    <div class="centralizar">
+        <div class="btn-carrossel">
+            <button class="prev"><img src="/img/left-arrow.png" alt="esquerda" class="setas"></button>
+        </div>
+        <div class="carousel">
+            <img src="/img/Captura de tela 2023-11-23 072446.png" alt="Imagem 1">
+            <img src="/img/Captura de tela 2023-11-22 092755.png" alt="Imagem 2">
+            <img src="/img/Captura de tela_20230227_153037.png" alt="Imagem 3">
+            <img src="/img/Captura de tela_20230227_163439.png" alt="Imagem 4">
+            <img src="/img/Captura de tela 2023-04-22 152039.png" alt="Imagem 5">
+            <img src="/img/Captura de tela 2023-04-12 002815.png" alt="Imagem 6">
+        </div>
+        <div class="btn-carrossel">
+            <button class="next"><img src="/img/right-arrow.png" alt="direita" class="setas"></button>
+        </div>
+    </div>
+
+    <!--SobreMim-->
+
+    <div class="container-sobre" id="secao1">
+        <div class="about-me">
+            <div class="centralizar">
+                <div class="photo-my">
+                    <div class="about-title">
+                        <p>Sobre Mim</p>
+                    </div>
+                    <div class="my-photo"></div>
+                </div>
+            </div>
+            <div class="title-name">
+                <p>My Name Is</p>
+            </div>
+
+            <div class="text-about">
+                <p>Victor Hugo, I have 18 years old, study Wed Developing with Web Sites the 3 years and program games with Unity and GameMaker Studio 2.</p>
+                <p>And in free time, I make pixelarts.</p>
+            </div>
+        </div>
+        <div class="sites">
+            <div class="centralizar">
+                <div class="molde-projects">
+                    <a href="/paginas/sites.html"><img src="/img/Captura de tela 2023-11-22 092755.png" alt="" class="image-molde"></a>
+                </div>
+            </div>
+            <div class="centralizar">
+                <div class="molde-projects">
+                    <a href=""onclick="exibirAlert()"><img src="/img/Captura de tela 2023-08-30 082336.png" alt="" class="image-molde"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <button onclick="scrollToTop()" class="BtnScroll"><img src="/img/right.png" alt=""></button>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        const carousel = document.querySelector('.carousel');
+        const images = carousel.querySelectorAll('img');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        let currentIndex = 0;
+
+        function showImage(index) {
+            images.forEach((image, i) => {
+                if (i === index) {
+                    image.classList.add('active');
+                } else {
+                    image.classList.remove('active');
+                }
+            });
+        }
+
+        function nextImage() {
+            currentIndex++;
+            if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+            showImage(currentIndex);
+        }
+
+        function prevImage() {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            }
+            showImage(currentIndex);
+        }
+
+        setInterval(nextImage, 4000);
+
+        prevButton.addEventListener('click', prevImage);
+        nextButton.addEventListener('click', nextImage);
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function exibirAlert() {
+            // Texto que será exibido no alert
+            var texto = "This pag is a not complete";
+
+            // Exibe o texto em um alert
+            alert(texto);
+        }
+    </script>
+</body>
+
+</html>

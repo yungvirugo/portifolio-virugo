@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Lato:wght@300&family=Tilt+Warp&display=swap');
+
+
+html{
+    margin: 0;
+}
+
+body{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    background: #151314;
+}
+    /* Imagens */
+
+.img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+        
+    border-radius: 12px;
+}
+
+    /*  IconGuia */
+.icon{
+    width: 20px; 
+    height: 20px; 
+
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+    /* PrincipalDiv */
+
+.principal{
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    background: transparent;
+}
+
+    /* MenuDiv */
+
+.menu{
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    background: transparent;
+}
+
+.apresentação{
+    width: 100%;
+    height: auto;
+
+    position: 0;
+    display: flex;
+    margin: 0;
+    background: transparent;
+}
+
+    /* TituloDiv */
+
+.titulo{
+    width: auto;
+    height: auto;
+
+    margin: 0;
+    background: transparent;
+}
+
+    /* TituloText */
+
+.titulos{
+    font-size: 79px;
+    font-family: 'Lato', sans-serif;
+    
+    margin: 0;
+    margin-left: 44%;
+    color: rgb(51, 153, 164);
+}
+
+    /* DescriçãoText */
+
+.descricao{
+    font-size: 22px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+
+    margin: 0;
+    color: rgb(42, 195, 198);
+}
+
+    /* LinhaDiv */
+
+.linha{
+    width: 100%;
+    height: 2px;
+
+    margin: 0;
+    background: rgb(26, 224, 208);
+}
+
+.linha1{
+    width: 100%;
+    height: 2px;
+
+    position: absolute;
+    display: flex;
+    margin: 0;
+    margin-top: 1850px;
+    background: rgb(26, 224, 208);
+}
+
+    /* Butao */
+
+button{
+    width: 430px;
+    height: 55px;
+
+    margin: 9px;
+    margin-left: -28%;
+    margin-top: 1860px;
+    border: 3px solid rgb(32, 176, 186);
+    border-radius: 10px;
+    background: rgb(47, 229, 242);
+    box-shadow: 3px 4px 1px rgb(215, 44, 215);
+
+    font-size: 10px;
+    font-family: 'Kanit', sans-serif;
+   text-align: center;
+
+    transition: background-color 0.3s ease-in-out;
+    color: black;
+}
+
+button:hover{
+    background-color: rgb(215, 44, 215);
+}
+
+    /* ImagensDiv */
+
+.imagens1{
+    width: 640px;
+    height: 300px;
+
+    margin-top: 80px;
+    margin-left: 45%;
+    display: flex;
+    position: absolute;
+
+    border: 12px solid #1A1A1C;
+    border-radius: 12px;
+    box-shadow: 8px 7px 1px rgb(215, 44, 215);
+    background: rgb(32, 176, 186);
+}
+
+        /* PortifolioTituloText */
+
+.portifolio{
+    font-size: 43px;
+    font-family: 'Lato', sans-serif;
+
+    color: rgb(63, 182, 186);
+
+    position: absolute;
+    display: flex;
+    margin: 0;
+    margin-top: 25px;
+    margin-left: 27%;
+}
+
+        /* PortifolioDescriãoText */
+
+.portifoliodesc{
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+
+    color: rgb(66, 217, 222);
+    margin-top: 125px;
+    margin-left: 16%;
+}
+
+        /* KabumTituloText */
+
+.kabum{
+    font-size: 43px;
+    font-family: 'Lato', sans-serif;
+
+    color: rgb(63, 182, 186);
+
+    position: absolute;
+    display: flex;
+    margin: 0;
+    margin-top: 465px;
+    margin-left: 53%;
+}
+
+    /* KabumDiv */
+
+.imagens2{
+    width: 640px;
+    height: 300px;
+
+    margin-top: 540px;
+    margin-left: 25px;
+    display: flex;
+    position: absolute;
+
+    border: 12px solid #1A1A1C;
+    border-radius: 12px;
+    box-shadow: 8px 7px 1px rgb(215, 44, 215);
+    background: #1A1A1C;
+}
+
+    /* KabumDescText */
+
+.kabumdesc{
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+
+    color: rgb(66, 217, 222);
+
+    position: absolute;
+    display: flex;
+    margin: 0;
+    margin-top: 585px;
+    margin-left: 50%;
+}
+
+    /* TwitterTituloTxt */
+
+.twitter{
+    font-size: 43px;
+    font-family: 'Lato', sans-serif;
+
+    color: rgb(63, 182, 186);
+
+    position: absolute;
+    display: flex;
+    margin: 0;
+    margin-top: 925px;
+    margin-left: 27%;
+}
+
+    /* TwitterDiv */
+
+.imagens3{
+    width: 640px;
+    height: 300px;
+    
+    margin-top: 990px;
+    margin-left: 45%;
+    display: flex;
+    position: absolute;
+    
+    border: 12px solid #1A1A1C;
+    border-radius: 12px;
+    box-shadow: 8px 7px 1px rgb(215, 44, 215);
+    background: black;
+}
+
+    /* TwitterDescTxt */
+
+.twitterdesc{
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+
+    position: absolute;
+    display: flex;
+    color: rgb(66, 217, 222);
+    margin-top: 1020px;
+    margin-left: 16%;    
+}
+
+    /* GamemakerDiv */
+
+.imagens4{
+    width: 640px;
+    height: 300px;
+    
+    margin-top: 1475px;
+    margin-left: 25px;
+    display: flex;
+    position: absolute;
+    
+    border: 12px solid #1A1A1C;
+    border-radius: 12px;
+    box-shadow: 8px 7px 1px rgb(215, 44, 215);
+    background: rgb(32, 176, 186);
+}
+
+    /* GamemakerTituloTxt */
+
+.gamemaker{
+    font-size: 43px;
+    font-family: 'Lato', sans-serif;
+
+    color: rgb(63, 182, 186);
+
+    position: absolute;
+    display: flex;
+    margin: 0;
+    margin-top: 1385px;
+    margin-left: 53%;
+}
+
+    /* GamemakerdescTxt */
+
+.gamemakerdesc{
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+
+    color: rgb(66, 217, 222);
+
+    position: absolute;
+    display: flex;
+    margin: 0;
+    margin-top: 1510px;
+    margin-left: 50%;
+}

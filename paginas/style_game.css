@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Lato:wght@300&family=Tilt+Warp&display=swap');
+
+
+html{
+    margin: 0;
+}
+
+body{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    background: #151314;
+}
+
+    /* PrincipalDiv */
+
+.principal{
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    background: transparent;
+}
+
+    /* MenuDiv */
+
+.menu{
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    background: transparent;
+}
+
+    /* ConteudoDiv */
+
+.conteudo{
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    background: transparent;
+} 
+
+    /* TituloTxt */
+
+.titulo{
+    font-size: 44px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+
+    color: aliceblue;
+    margin: 0;
+}
+
+    /* LinhaDiv */
+
+.linha{
+    width: 100%;
+    height: 3px;
+
+    margin: 0;
+    background: rgb(26, 224, 208);
+}
+
+    /* DesceeiçãoTxt */
+
+.descricao{
+    font-size: 22px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+
+    color: aliceblue;
+}
+
+    /* ImagensDiv */
+
+.imagens1{
+    width: 650px;
+    height: 330px;
+
+    border: 12px solid #1A1A1C;
+    border-radius: 12px;
+    box-shadow: 8px 7px 1px rgb(215, 44, 215);
+    background: #1A1A1C;
+
+    position: absolute;
+    display: flex;
+    margin-top: 70px;
+    margin-left: 723px;
+}
+
+        /* TituloJogo1Txt */
+
+.titulojogo1{
+    font-size: 22px;
+
+    position: absolute;
+    display: flex;
+    margin-top: 120px;
+    margin-left: 402px;
+}
+

@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Oswald&family=Roboto+Condensed&family=Space+Mono&display=swap');
+
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: #E4D888;
+}
+
+a { 
+    text-decoration: none;
+}
+
+/*Menu*/
+
+header {
+    width: 100%;
+    height: 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+
+    border-bottom: 0.5rem solid #76E7CD;
+    box-shadow: 0rem 0.3rem 0.1rem rgba(0, 0, 0, 0.344);
+
+    background-color: #081926;
+}
+
+nav {
+    width: 65%;
+    height: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.cores-menu-azul {
+    width: 100%;
+    height: 7rem;
+
+    position: absolute;
+
+    margin-top: -6rem;
+    z-index: 1;
+
+    border-radius: 0 0 0rem 0.3rem;
+
+    background-color: #76E7CD;
+}
+
+.cores-menu-rosa {
+    width: 99.8%;
+    height: 7rem;
+
+    position: absolute;
+
+    margin-top: -5.2rem;
+    z-index: 0;
+    right: 0;
+
+    border-radius: 0 0 0rem 1rem;
+
+    box-shadow: 0.3rem 0.3rem 0.1rem rgba(0, 0, 0, 0.344);
+
+    background-color: #E55289;
+}
+
+.btn-menu {
+    width: auto;
+    height: 2.5rem;
+
+    font-family: 'Chakra Petch';
+    font-size: 1.5rem;
+    color: gray;
+
+    cursor: pointer;
+    position: relative;
+
+    margin-left: 1rem;
+    border: none;
+
+    transition: all 0.2s ease;
+
+    background-color: transparent;
+}
+
+.btn-menu:hover {
+    color: #76E7CD;
+    transform: translateY(-0.1rem);
+}
+
+.btn-menu::after {
+    content: '';
+
+    width: 0%;
+    height: 0.2rem;
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    border-radius: 0.5rem;
+
+    transition: 0.2s ease;
+
+    background-color: white;
+}
+
+.btn-menu:hover::after {
+    width: 100%;
+
+    box-shadow: 0 0 0.3rem white;
+}
+
+.menu-logo {
+    width: 15%;
+    height: 100%;
+}
+
+.menu-redes {
+    width: 15%;
+    height: 100%;
+}
+
+/*Carrossel*/
+
+.carousel {
+    width: 80%;
+    height: 30rem;
+
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+
+    background-size: cover;
+
+    border-radius: 0 0 1rem 1rem;
+}
+
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    color: black;
+}
+
+.carousel img.active {
+    opacity: 1;
+}
+
+.prev,
+.next {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+    border-radius: 3rem;
+
+    transition: all 0.2s ease;
+
+    background-color: transparent;
+}
+
+.setas {
+    width: 95%;
+    height: auto;
+}
+
+.prev:hover,
+.next:hover {
+    width: 2.6rem;
+    height: 2.6rem;
+
+    box-shadow: 0 0 0.3rem rgba(255, 255, 255, 0.544);
+
+    background-color: rgba(128, 128, 128, 0.608);
+}
+
+.prev {
+    top: 40%;
+    right: 2rem;
+    position: absolute;
+
+}
+
+.next {
+    top: 40%;
+    left: 2rem;
+    position: absolute;
+}
+
+.btn-carrossel {
+    width: 10%;
+    height: 25rem;
+    position: relative;
+}
+
+.centralizar {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*SobreMim*/
+
+.container-sobre {
+    width: 80%;
+    height: 42rem;
+
+    margin: auto;
+    margin-top: 3rem;
+
+    display: flex;
+
+}
+
+.about-me {
+    width: 40%;
+    height: 100%;
+}
+
+.photo-my {
+    width: 80%;
+    height: 23rem;
+
+    margin-top: 1rem;
+}
+
+
+
+.sites {
+    width: 60%;
+    height: 100%;
+
+}
+
+.molde-projects {
+    width: 80%;
+    height: 18rem;
+
+    margin: 1rem;
+
+    position: relative;
+
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0rem #E55289;
+
+    background-color: #76E7CD;
+}
+
+.molde-projects::after {
+    content: 'Acesse Aqui';
+    width: 100%;
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Oswald';
+    font-size: 1.5rem;
+    color: #E55289;
+
+    top: 35%;
+    opacity: 0;
+
+    position: absolute;
+
+    transition: all 0.3s ease;
+
+    background-color: #071927;
+}
+
+.molde-projects:hover::after {
+    opacity: 1;
+}
+
+.image-molde {
+    width: 97%;
+    height: 96%;
+
+    position: relative;
+
+    top: 0.35rem;
+    left: 0.5rem;
+
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+
+}
+
+.about-title {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 2;
+
+    position: absolute;
+
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 4.4rem;
+    color: #76E7CD;
+
+    text-shadow: 0.3rem 0rem 0rem #E55289;
+}
+
+.about-title p {
+    margin: 0;
+}
+
+.my-photo {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0.5rem solid purple;
+    border-radius: 100%;
+
+    z-index: 1;
+    position: relative;
+
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/img/cestarinho.jpeg);
+}
+
+
+.title-name {
+    width: auto;
+    height: auto;
+
+    font-size: 3rem;
+
+    position: absolute;
+
+    bottom: -20rem;
+    left: 12rem;
+
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 3.5rem;
+    color: #76E7CD;
+
+    text-shadow: -0.3rem 0rem 0rem #E55289;
+
+    font-weight: bold;
+
+    z-index: 4;
+}
+
+.text-about {
+    width: 80%;
+    height: 16rem;
+
+    margin: auto;
+
+    font-family: 'Space Mono', monospace;
+    font-size: 1.4rem;
+    color: #f14182;
+
+    text-shadow: 0.1rem 0 0 #76E7CD;
+
+    z-index: 4;
+}
+
+/*Sites*/
+
+.container-sites {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+}
+
+.info-molde {
+    width: 35%;
+    height: 92%;
+
+    font-family: 'Oswald';
+    text-decoration: none;
+    outline: none;
+
+    margin-top: 0.8rem;
+    margin-left: 0.8rem;
+    position: fixed;
+
+    border: 0.5rem solid #53C9AB;
+    box-shadow: 0.5rem 0.5rem 0rem #E55289;
+
+    border-radius: 2rem;
+
+    background-color: #E4D888;
+}
+
+.tamplates {
+    width: 65%;
+    height: auto;
+
+    margin-left: 40%;
+}
+
+.molde-project {
+    width: 40rem;
+    height: auto;
+
+    margin-top: 5rem;
+
+}
+
+.photo-project {
+    width: 98%;
+    height: 20rem;
+
+    border-radius: 2rem;
+
+    border: 0.5rem solid #76E7CD;
+    box-shadow: 0.5rem 0.5rem 0rem #E55289;
+
+    background-color: purple;
+}
+
+.photo-project img{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 1rem;
+}
+
+.title-project {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 3rem;
+    color: #76E7CD;
+
+    text-shadow: 0.1rem 0.1rem 0 #f14182;
+
+
+}
+
+.title-project p {
+    margin: 0;
+}
+
+.btn-gits {
+    width: 9rem;
+    height: 3.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto 1rem;
+    margin-top: 1rem;
+
+    border: none;
+    border-radius: 1rem;
+
+    box-shadow: 0.4rem 0.3rem 0 #f14182;
+
+    transition: all 0.2s ease;
+
+    background-color: #76E7CD;
+}
+
+.btn-gits img {
+    width: auto;
+    height: 80%;
+}
+
+.btn-gits:hover {
+    transform: translateY(-0.8rem);
+}
+
+.Btn-GoBack {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    position: fixed;
+
+    right: 4rem;
+    bottom: 4rem;
+
+    border: none;
+    border-radius: 0.7rem;
+
+    box-shadow: 0.2rem 0.2rem 0rem #E55289;
+
+    background-color: #76E7CD;
+}
+
+/*ScrollToTop*/
+
+.BtnScroll {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    right: 4rem;
+    bottom: 4rem;
+
+    border: none;
+    border-radius: 0.7rem;
+
+    box-shadow: 0.2rem 0.2rem 0rem #E55289;
+
+    background-color: #76E7CD;
+}
+
+.BtnScroll img{
+    width: auto;
+    height: 60%;
+}
+
+
+
+/*DesenvolvimentoWeb*/
+
+.container-web {
+    width: 80%;
+    height: auto;
+
+    margin: auto;
+    margin-top: 12rem;
+}
+
+.titulo-web {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Share Tech Mono';
+    font-size: 4rem;
+    color: rgb(0, 255, 0);
+
+    text-shadow: 0rem 0 0.6rem green;
+
+    margin: 0;
+}
+
+
+.desc-projeto {
+    width: 80%;
+    height: 10rem;
+
+    font-family: 'Oswald';
+    font-size: 1.5rem;
+    color: #00ff00;
+
+    margin: auto;
+}
+
+.desc-projeto p {
+    margin: 0;
+}
+
+.btn-git {
+    width: 9rem;
+    height: 3rem;
+
+    margin: auto;
+    margin-top: 1rem;
+
+    border: none;
+    border-radius: 2rem;
+
+    color: white;
+
+    transition: all 0.2s ease;
+
+    background-color: #010010;
+}
+
+.btn-git:hover {
+    box-shadow: 0 0 0.4rem #00ff00;
+    transform: translateY(-0.3rem);
+}
+
+/*DesenvolvimentoJogos*/
+
+.container-games {
+    width: 80%;
+    height: auto;
+
+    margin: auto;
+    margin-top: 12rem;
+}
+
+/*PixelArt*/
+
+.container-pixel {
+    width: 80%;
+    height: 5rem;
+
+    margin: auto;
+    margin-top: 12rem;
+
+
+    background-color: #ff00ee;
+}
+
+/*Celular*/
+
+@media screen and (max-width: 720px) {
+    header {
+        width: 100%;
+    }
+
+    .menu-logo{
+        display: none;
+    }
+
+    .btn-menu{
+        width: auto;
+        font-size: 0.7rem;
+    }
+
+    .menu-redes{
+        display: none;
+    }
+
+    .btn-carrossel{
+        display: none;
+    }
+
+    .carousel{
+        width: 100%;
+        height: 20rem;
+    }
+
+    .carousel img{
+        width: 100%;
+        height: 80%;
+
+        background-position: center;
+    }
+
+    .container-sobre{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .about-me{
+        width: 100%;
+        height: auto;
+
+        left: 0;
+        margin-left: 0;
+    }
+
+    .about-title{
+        width: 100%;
+
+        top: 65%;
+        left: 0;
+        position:   absolute;
+    }
+
+    .photo-my{
+        width: 100%;
+        height: 26rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .my-photo{
+        width: 90%;
+        height: 90%;
+    }
+
+    .title-name{
+        width: 100%;
+        height: auto;
+
+        top: 0;
+        left: 5%;
+        position: relative;
+    }
+
+    .text-about{
+        width: 90%;
+        height: auto;
+    }
+
+    .sites{
+        width: 100%;
+        height: auto;
+    }
+
+    .molde-projects{
+        width: 90%;
+        height: auto;
+
+    }
+
+    .molde-projects::after{
+        height: 3rem;
+
+        top: 40%;
+    }
+
+    .container-sites{
+        width: 100%;
+        height: auto;
+    }
+
+    .info-molde{
+        display: none;
+    }
+
+    .tamplates{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .molde-project{
+        width: 99%;
+    }
+
+    .photo-project{
+        width: 90%;
+        height: auto;
+    }
+
+    .title-project{
+        height: 5rem;
+        font-size: 2rem;
+    }
+}
